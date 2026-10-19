@@ -1,0 +1,39 @@
+site_name: Huseen Khan
+site_description: Personal Academic and Research Website
+site_author: Muhammad Huseen Khan
+
+theme:
+  name: material
+  language: en
+
+  palette:
+    - scheme: default
+      primary: white
+      accent: indigo
+
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.top
+    - content.code.copy
+
+  font:
+    text: Roboto
+    code: Roboto Mono
+
+nav:
+  - Home: index.md
+  - Publications: publications.md
+  - Posts: posts.md
+  - Talks & Workshops: talks.md
+  - Teaching: teaching.md
+  - Contact: contact.md
+
+extra_css:
+  - stylesheets/extra.css
+
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - toc:
+      permalink: true

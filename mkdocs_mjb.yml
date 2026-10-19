@@ -1,0 +1,165 @@
+---
+site_name: Mujeeb's Digital World
+site_url: https://alohamujeeb.github.io/
+extra:
+  generator: false # Disable footer with "Made with Material for MkDocs" message
+  mathjax: true
+ 
+  analytics:      # Setup Google Analytics
+    provider: google
+    property: G-TNXHTHNJW1
+    
+markdown_extensions:
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.superfences:
+      custom_fences:
+      - name: mermaid
+        class: mermaid
+        format: !!python/name:pymdownx.superfences.fence_code_format
+
+  - admonition
+  - pymdownx.details
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
+  - javascripts/katex.js
+  - https://unpkg.com/katex@0/dist/katex.min.js
+  - https://unpkg.com/katex@0/dist/contrib/auto-render.min.js
+
+extra_css:
+  - https://unpkg.com/katex@0/dist/katex.min.css
+  
+theme:
+  name: material
+  #custom_dir: docs/overrides
+ 
+
+  font:
+    #code: Roboto Mono
+    #text: Inconsolata
+    #text: Anonymous Pro  
+    text: Roboto Mono  
+    code: Source Code Pro 
+    
+  palette:
+    #scheme: default
+    #primary: default
+    #accent: default
+
+    # Palette toggle for light mode
+    - scheme: default
+      #primary: indigo
+      primary:  blue grey #teal
+      accent: red
+      toggle:
+        icon: material/brightness-7 
+        name: Switch to dark mode
+    
+    # Palette toggle for dark mode
+    - scheme: slate
+      #primary: indigo
+      primary: teal #lime #teal #blue grey
+      accent: red
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+        
+  features:
+    - navigation.tracking
+    - navigation.tabs
+    #- navigation.tabs.sticky
+    - navigation.path
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.tabs # to display menu in the top bar
+    - navigation.tabs.sticky 
+    - navigation.footer #next and previous buttons
+    - navigation.indexes
+    - navigation.sections
+    #- navigation.expand
+    - content.code.copy
+    - content.code.select
+    - content.code.annotate
+    - header.autohide
+    - navigation.prune 
+    - navigation.indexes 
+    - toc.follow
+    #- toc.integrate  #do it at runtime later
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - search.share
+
+
+plugins: 
+  - offline
+  - tags
+  - blog:
+      blog_dir: blog
+      blog_toc: true
+      categories_allowed:
+        - 5G
+        - Wifi
+        - Data Communication
+        - Computer Networking
+        - Embedded Systems
+        - Robotics
+        - Linux
+        - Programming
+        - Life experiences
+        - Artificial Intelligence
+        - Machine Learning
+        - Multimedia
+        - Video
+        - Audio
+        
+  - search
+  - meta
+  - exclude-search:
+      exclude:
+        - documentation/*
+  
+        
+# Page tree
+nav:
+  - Home:
+    - Home: index.md
+    - <font color='tomato'><h3>Engg Notes</h3></font>: enggnotes/index.md
+    - <font color='tomato'><h3>AI in Context</h3></font>: aiincontext/index.md
+    - <font color='green'><h3>Whispers of Heart</h3></font>: woh.md
+    - <font color='green'><h3>My Inspiration</h3></font>: inspiration.md
+    - <font color='green'><h3>Search</h3></font>: tags.md
+
+  - Engg-Notes: 
+    - Engg-Notes: enggnotes/index.md
+    - <font color='green'><h3>Design and Decision Notes</h3></font>: design/index.md
+    - <font color='green'><h3>Developer Reference</h3></font>: references/index.md
+
+
+  - AI-in-Context:
+    - AI-in-Context: aiincontext/index.md
+    - <font color='green'><h3>1. Back to Basics</h3></font>: aiincontext/basics.md
+    - <font color='green'><h3>2. Learning Methods</h3></font>: aiincontext/learningmethods.md
+    - <font color='green'><h3>3. AI Models</h3></font>: aiincontext/aimodels.md
+    - <font color='green'><h3>4. AI Applications</h3></font>: aiincontext/aiapplications.md
+    - <font color='green'><h3>5. AI Systems & Integration</h3></font>: aiincontext/aisystems.md
+
+  #To be enabled later
+  #- Mathelogy:
+     #- Mathelogy: mathelogy/inderx.md
+  #- Courses:
+    #- Courses: courses/index.md
+
+  - Blogs:
+    - blog/index.md
+  
+
+ 

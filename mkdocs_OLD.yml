@@ -1,0 +1,6 @@
+site_name: Huseen_Khan
+site_description: Personal Academic and Research Website
+site_author: Muhammad Huseen Khan
+
+theme:
+  name: material
